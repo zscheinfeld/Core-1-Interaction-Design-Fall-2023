@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: unset;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    
+}
+
+body {
+    /* max-width: 700px;
+    margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header {
+    padding: 10px 15px;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: rgb(240,255,0);
+    min-width: 150px;
+}
+
+.info {
+    line-height: 1.1;
+}
+
+.info > p {
+    font-size: 15px;
+    margin: 0;
+    color: rgb(240,255,0);
+}
+
+.info > p > a {
+    font-size: 15px;
+    margin: 0;
+    color: rgb(240,255,0);
+}
+
+.info > p > a:hover {
+    font-size: 15px;
+    margin: 0;
+    color: rgb(0, 238, 255);
+}
+
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+}
+
+.copyright p {
+    font-size: 15px;
+}
+
+nav {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0px 15px 0px 0px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(240,255,0);
+}
+
+
+nav > div {
+    flex: 1;
+    padding: 10px 10px 30px 10px;
+
+}
+
+nav > div:first-of-type {
+    padding: 10px 0px 15px 5px;
+}
+
+div.active {
+    border-bottom: 2px solid #000
+}
+
+nav > div a {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Recursive', monospace;
+    color: white;
+    text-decoration: none;
+}
+
+
+.top {
+    padding-bottom: 40px;
+}
+
+.content {
+    width: 85%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sec {
+    width: 95%;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+.syl-head {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.syl-sec {
+    margin-bottom: 45px;
+}
+
+.right {
+    flex: 1;
+}
+
+.left {
+    display: none;
+    margin-top: -5px;
+   
+}
+
+
+h3 {
+    font-family: 'Recursive', monospace;
+    font-size: 100px;
+    font-weight: 1000px;
+    line-height: .9;
+    margin-top: -25px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+
+.syl-text a {
+    color: white;
+    font-weight: 700;
+}
+
+#schedule {
+    min-width: 600px;
+}
+
+#schedule a {
+    color: rgb(255, 255, 255);
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    background-color: rgb(255, 255, 255);
+    grid-gap: 1px;
+    border: 1px solid rgb(255, 255, 255);
+   
+}
+
+.item.col-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0;
+    color: white;
+    height: 40px;
+}
+
+.item.hw {
+    margin-right: 2px;
+}
+
+.item {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 40px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.item-span {
+    grid-column: 2 / span 2;
+    text-transform: uppercase;
+    margin-right: 2px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+.date {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.item.date {
+    padding: 0;
+}
+
+.syl-text {
+    display: none;
+    width: 100%;
+    max-width: 850px;
+    margin: 10px 0px 40px 0px;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+ul {
+    list-style: none;
+    margin: 20px 0px 30px 7%;
+    
+}
+  
+ul li::before {
+    content: "\2022";
+    color: rgb(240,255,0);
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em; 
+  }
+
+li {
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 10px 0px;
+    color: white;
+}
+
+.right > h3 {
+    cursor: pointer;
+    width: fit-content;
+}
+
+
+.left {
+    
+    color: rgb(240,255,0);
+    font-size: 100px;
+    font-family: 'Recursive', monospace;
+    max-width: 70px;
+}
+
+.optional {
+    color: rgb(174, 174, 174);
+}
+
+.optional a {
+    color: rgb(174, 174, 174);
+}
+
+.due {
+    font-weight: 700;
+}
+
+.mobi {
+    display: none;
+}
+
+
+
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+    .mobi {
+        display: block;
+        color: rgb(240,255,0);
+    }
+
+    .top {
+        padding-bottom: 10px;
+    }
+
+    .mobi-col {
+        flex: 1;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .mobi-col-right {
+        padding: 10px 0px 10px 10px;
+    }
+
+    header {
+        display: none
+    }
+
+    .content {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .sec {
+        margin-top: 60px;
+        padding-bottom: 10px;
+        padding-left: 0;
+    }
+
+    nav {
+        padding: 0 10px 45px 10px;
+        width: 100%;
+        flex-direction: row;
+        height: 40px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    nav.open {
+        padding: 0 10px 60px 10px;
+        height: auto;
+    }
+
+    nav > div {
+        padding: unset;
+        background-color: black;
+
+    }
+
+    nav > div a {
+        font-size: 25px;
+        background-color: black;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+
+    nav > div:first-of-type {
+        padding: 10px 10px 10px 0px;
+    }
+
+    .nav-items {
+        display: block;
+    }
+
+    .nav-items > div {
+        padding-bottom: 3px;
+    }
+
+    .menu {
+        cursor: pointer;
+    }
+
+    .menu h1 {
+        color: rgb(255, 255, 255);
+    }
+
+
+    h3 {
+        font-size: 60px;
+        margin-bottom: 5px;
+    }
+
+    .left{
+        font-size: 60px;
+        max-width: 45px;
+    }
+
+    p {
+        font-size: 21px;
+    }
+
+    li {
+        font-size: 21px;
+        margin: 6px 0;
+    }
+
+    ul {
+        margin: 10px 0 30px 7%;
+    }
+
+    .syl-head {
+        margin-bottom: 15px;
+    }
+
+    #schedule p {
+        font-size: 17px;
+    }
+
+    .item {
+        padding: 10px 15px;
+    }
+
+    .date {
+        font-size: 17px;
+    }
+
+    .grid-container {
+        margin-right: 10px;
+    }
+}
