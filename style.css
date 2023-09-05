@@ -176,11 +176,9 @@ h3 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 10% 50% 40%;
+    grid-template-columns: 10% 20% 35% 35%;
     background-color: rgb(255, 255, 255);
-    grid-gap: 1px;
     border: 1px solid rgb(255, 255, 255);
-   
 }
 
 .item.col-head {
@@ -218,6 +216,14 @@ h3 {
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.theme{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
 }
 
 .item.date {
